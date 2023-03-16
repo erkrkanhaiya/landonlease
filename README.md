@@ -1,8 +1,5 @@
 # LandOnlese 
  
-
-## Sample Hotel Booking API Test
-
 ### Install and update node.js depedencies by using following commands
 ```sh
 npm install
