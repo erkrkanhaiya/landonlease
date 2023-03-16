@@ -8,6 +8,7 @@ const FacilitiesModel = require('./facilities.model')
 const UsersAuthKeyModel = require('./users_auth_key.model')
 const UserModel = require('./user.model')
 const UsersModel = require('./users/users.model')
+const AdminModel = require('./admin/adminmodel')
 
 module.exports = {
   HotelModel,
@@ -19,5 +20,6 @@ module.exports = {
   FacilitiesModel,
   UsersAuthKeyModel,
   UserModel,
-  UsersModel
+  UsersModel,
+  AdminModel
 }
