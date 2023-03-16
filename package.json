@@ -1,0 +1,58 @@
+{
+    "name": "travelerbook",
+    "version": "1.0.0",
+    "description": "Hotel Booking",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js",
+        "pretest": "eslint --ignore-path .gitignore .",
+        "install-node": "npm install && cd admin && npm install",
+        "admin": "cd admin && npm start",
+        "dev": "concurrently \"nodemon index\" \"npm run admin\""
+          
+    },
+    "keywords": [
+        "TravelerBook",
+        "NodeJS",
+        "RestAPI",
+        "MySQL",
+        "Sequelize"
+    ],
+    "author": "Magnisys",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "compression": "^1.7.4",
+        "concurrently": "6.3",
+        "cors": "^2.8.5",
+        "dotenv": "^8.0.0",
+        "express": "^4.17.1",
+        "express-rate-limit": "^6.7.0",
+        "jsonwebtoken": "^9.0.0",
+        "log4js": "^4.5.1",
+        "memory-cache": "^0.2.0",
+        "mysql2": "^1.6.5",
+        "nodemon": "^1.19.1",
+        "parseboolean": "^1.0.0",
+        "passport": "^0.4.0",
+        "passport-headerapikey": "^1.1.0",
+        "pg": "^7.12.0",
+        "sequelize": "^5.11.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "bugs": {
+        "url": "/"
+    },
+    "homepage": "/",
+    "devDependencies": {
+        "eslint": "^6.1.0",
+        "eslint-config-standard": "^13.0.1",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-node": "^9.1.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.0"
+    }
+}

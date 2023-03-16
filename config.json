@@ -1,0 +1,46 @@
+{
+    "environment": "development",
+    "appConfig": {
+        "port": 2023,
+        "apiLoggingEnable": true,
+        "compression": true,
+        "versionNo": "default",
+        "apiPath": "app",
+        "apiUrlPath": "/api"
+    },
+    "dbConfig": {
+        "dbLoggingEnable": false,
+        "development": {
+            "username": "root",
+            "password": "root",
+            "database": "property",
+            "host": "localhost",
+            "port": "3306",
+            "dialect": "mysql"
+        },
+        "test": {
+            "username": "root",
+            "password": "root",
+            "database": "property",
+            "host": "localhost",
+            "port": "3306",
+            "dialect": "mysql"
+        },
+        "production": {
+            "username": "root",
+            "password": "root",
+            "database": "property",
+            "host": "localhost",
+            "port": "3306",
+            "dialect": "mysql"
+        },
+        "testpostgres": {
+            "username": "postgres",
+            "password": "root",
+            "database": "property",
+            "host": "localhost",
+            "port": "5432",
+            "dialect": "postgres"
+        }
+    }
+}
