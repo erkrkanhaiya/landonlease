@@ -4,10 +4,10 @@ const app = express();
 
 app.use(require("./admin.route"));
 
-// app.use(require("./userAuth.route"));
-// app.use(require("./hotels.route"));
-// app.use(require("./rooms.route"));
-// app.use(require("./facilities.route"));
+app.use(require("./userAuth.route"));
+app.use(require("./hotels.route"));
+app.use(require("./rooms.route"));
+app.use(require("./facilities.route"));
 
 module.exports = app;
 
