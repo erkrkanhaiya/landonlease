@@ -29,7 +29,16 @@ class AdminController {
   async createadmin (req, res) {
     try {
       var saveuser = req.body
+      const attributes = ['id', 'name', 'password']
+
       var data = await AdminService.createadmin(saveuser)
+        // const isPasswordValid = await user.verifyPassword(password)
+        // delete user.dataValues.password
+        // return res.json({
+        //   data: user.toJSON(),
+        //   token: user.generateToken()
+        // })
+
       return new ResponseHandler(data, req.method, res)
     } catch (err) {
       return new ErrorHandler(err, res)

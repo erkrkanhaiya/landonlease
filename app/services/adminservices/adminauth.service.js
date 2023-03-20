@@ -26,7 +26,7 @@ class AdminAuthService {
 
   login(data) {
     return new Promise((resolve, reject) => {
-      this.AdminUser.findOne({where:data})
+      this.AdminUser.findOne({where:data}, attributes )
         .then((user) => {
           if (
             user === undefined ||
@@ -35,6 +35,7 @@ class AdminAuthService {
           ) {
             reject(new ResourceNotFoundError("User"));
           } else {
+
             resolve(user);
           }
         })
